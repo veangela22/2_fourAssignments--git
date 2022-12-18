@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Information</title>
+  </head>
+  <body>
+    <form action="server.php">
+      <fieldset>
+        <legend>Contact Us!</legend>
+        <br />
+        Name <br />
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Jane Doe"
+          required
+        /><br /><br />
+        Email <br />
+        <input
+          type="text"
+          name="email"
+          value=""
+          placeholder="jane.doe@gmail.com"
+          required
+        /><br /><br />
+        Message <br />
+        <textarea
+          name="message"
+          id="textbox"
+          cols="30"
+          rows="10"
+          placeholder="Message Here"
+          required
+        ></textarea>
+        <br /><br />
+        <label for="priority"> Select Priority:</label>
+        <select name="importance" id="priority">
+          <option value="low">Low</option>
+          <option value="low">Medium (Need Assistance Soon)</option>
+          <option value="low">Urgent (Need Assistance Now)</option>
+        </select>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
