@@ -1,0 +1,162 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(243, 244, 206);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.navbar {
+    background: #062c6d;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.logo {
+    font-size: x-large;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 2em;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 1em;
+    font-size: 14px;
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav_right {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.nav_right button {
+    border-radius: 5px;
+    background-color: rgb(243, 244, 206);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.nav_right input {
+    height: 35px;
+    width: 225px;
+}
+
+#submit_button {
+    box-shadow: 0 2px 4px 0 rgba(151, 151, 151, 0.2);
+    border-radius: 5px;
+    background-color: #062c6d;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 150px;
+    padding: .5em;
+    cursor: pointer;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content_grid {
+    display: grid;
+    align-items: center;
+    width: fit-content;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 30px;
+}
+
+.content_info {
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+
+.landingpage button {
+    box-shadow: 0 2px 4px 0 rgba(151, 151, 151, 0.2);
+    border-radius: 5px;
+    background-color: #062c6d;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 150px;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.form_container {
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+    font-size: large;
+}
+
+legend {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.information input {
+    height: 30px;
+    width: 250px;
+}
+
+.information textarea {
+    height: 200px;
+    width: 400px;
+}
+
+footer {
+    background: #062c6d;
+    color: #fff;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    margin-top: auto;
+}

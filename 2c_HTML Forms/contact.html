@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Request Your Nenny!</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav_left">
+        <div class="logo">Nenny Boy</div>
+        <div class="nav_links">
+          <a href="./index.html">Figures</a>
+          <a href="#">Accessories</a>
+          <a href="#">Merch</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="nav_right">
+        <input type="text" placeholder="Looking for something?" />
+        <button type="submit">Submit</button>
+      </div>
+    </nav>
+    <div class="form_container">
+      <form action="server.php">
+        <fieldset class="information">
+          <legend>Request Your Nenny!</legend>
+          <br />
+          Name <br />
+          <input
+            type="text"
+            required
+            name="name"
+            value=""
+            placeholder="Jane Doe"
+            required
+          /><br /><br />
+          Email <br />
+          <input
+            type="text"
+            required
+            name="email"
+            value=""
+            placeholder="jane.doe@gmail.com"
+            required
+          /><br /><br />
+          Message <br />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Need help finding a specific Nendroid?"
+            required
+          ></textarea>
+          <br /><br />
+          <label for="priority"> Select Priority:</label>
+          <select name="importance" id="priority">
+            <option value="low">Recently Released (Easy)</option>
+            <option value="low">3-5 years old (Medium)</option>
+            <option value="low">6-10 years old (Hard)</option>
+          </select>
+          <input type="submit" value="Submit" id="submit_button" />
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2022, Nenny Boy</p>
+    </footer>
+  </body>
+</html>
